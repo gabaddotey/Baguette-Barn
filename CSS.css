@@ -1,0 +1,447 @@
+body{
+	margin:0px;
+	background-color: #F1FAEE;
+}
+
+/*Hidden Scrollbar tip from https://blog.logrocket.com*/
+body::-webkit-scrollbar{
+	display: none;
+}
+
+a {
+	text-decoration:none;
+	color: wheat;
+}
+
+h1{
+	font-size:55px;
+	font-family: "mudstone-sans", sans-serif;
+	font-weight: 900;
+	text-align:center;
+	font-style: normal;
+}
+
+p,a{
+	margin:0px;
+	font-size: 25px;
+	font-family: "dapifer-stencil", sans-serif;
+	font-weight: 500;
+	font-style: oblique;
+	text-align: center;
+	color: wheat;
+}
+
+
+img ,div{
+	overflow:hidden;
+}
+
+img#lgo {
+    max-width: 50%;
+    float: left;
+}
+
+.A,.B,.C,.D,.Bar{
+	padding: 11px;
+
+}
+
+.links{
+	display:grid;
+	grid-template-columns: 40% 20% 20% 20%;
+	grid-template-rows: 100%;
+	padding: 20px;
+	margin-bottom: 10px;
+	background-color: #1D3557;
+	align-items:center;
+}
+
+.wrapper{
+	display:grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows:300px 300px 300px;
+	row-gap: 10px;
+	/* padding: -104px; */
+	column-gap: 10px;
+}
+
+
+
+.A{
+	display:grid;
+
+	grid-column: span 2;
+	grid-row: span 1;
+	/*
+	filter: blur(2px);
+	background-image: url("cowboybread.jpeg");
+	background-size: 1350px;
+	background-position-y:12%;
+	background-color: #e52c3a;
+	*/
+}
+
+#lgo2{
+	z-index:1;
+	width: 45%;
+	align-self: center;
+	translate: 320px -75px;
+}
+
+
+#lgo2:hover{
+	transform:scale(10px);
+}
+
+#bgi{
+	width:102%;
+	translate: -17px -80px;
+
+	filter: blur(2px);
+}
+
+@keyframes blurout {
+	to {
+        filter: blur(0px);
+    }
+}
+
+#bgi:hover{
+	animation-name: blurout;
+    animation-duration: 1s;
+	animation-fill-mode:forwards;
+}
+
+.B{
+	display:grid;
+	
+	background-color: #A8DADC;
+}
+
+.mtxt{
+	display: grid;
+	font-size: 50px;
+	font-family: "dapifer-stencil", sans-serif;
+	text-align: center;
+	justify-items: center;
+	margin-right: 20px;
+	margin-top: 55px;
+	color: #E23C4A;
+}
+
+.Bar{
+	display:grid;
+	grid-row: span 2;
+	grid-template-columns: 60% 40%;
+	grid-gap: 10px;
+	grid-template-rows: 40% 60%;
+	background-color: #E23C4A;
+}
+
+.Bar div{
+	display:grid;
+}
+
+.Bar img{
+	object-fit:cover;
+	height: 100%;
+	width: 100%;
+}
+
+.Bar p{
+	/* align-items: stretch; */
+	/* text-align: center; */
+	/* justify-items: center; */
+	/* content-visibility:hidden; */
+}
+
+#i3{
+	grid-column: span 2;
+
+	margin-bottom:10px;
+}
+
+#t1,#t2,#t3{
+	display: grid;
+	position: absolute;
+	align-self: center;
+	justify-self:center;
+
+	font-size:35pt;
+}
+
+#t2{
+	font-size:30pt;
+}
+
+
+/*Hides text when not hovering*/
+#i1:not(:hover) > #t1{
+	opacity:0;
+}
+
+#i2:not(:hover) > #t2{
+	opacity:0;
+}
+
+#i3:not(:hover) > #t3{
+	opacity:0;
+}
+
+@keyframes names{
+	from {
+        filter:blur(0px);
+    }
+	
+	to {
+		border:wheat solid 10px;
+		filter:blur(2.2px);
+    }
+}
+
+#i1:hover,#i2:hover,#i3:hover{
+	animation-name: names;
+    animation-duration: .7s;
+	animation-fill-mode:forwards;
+}
+
+.C{
+	display:grid;
+
+	background-color: #457B9D;
+}
+
+.revs{
+	display:grid;
+	grid-template-columns:49% 49%;
+	grid-column-gap: 10px;
+	grid-template-rows: 15% 85%;
+}
+
+#revtop{
+	/*
+	position:absolute;
+	height:20px;
+	margin-bottom: 10px;
+	*/
+	grid-column: span 2;
+}
+
+.revtxt, .name{
+	text-align:center;
+	font-size: 15pt;
+}
+
+#r1,#r2{
+	padding:10px;
+
+	font-family:"dapifer-stencil", sans-serif;
+
+	align-items:center;
+	justify-items: center;
+
+	color: wheat;
+}
+#r1{
+	border:#e52c3a solid 10px;
+	border-radius:5px;
+
+	color: wheat;
+
+	background-color:#1D3557;
+}
+
+#r2{
+	border:#1D3557 solid 10px;
+	border-radius:5px;
+
+	background-color:#e52c3a;
+}
+
+
+.qmrk{
+	font-family: "pinot-grigio-modern";
+	font-style: normal;
+	/* font-family: cursive; */
+	font-size:30pt;
+}
+
+p.qmrk {
+    margin-bottom: -10px;
+}
+
+p#\32 nd {
+    float: right;
+}
+
+2nd.qmrk{
+	float:right;
+}
+
+.name{
+	font-family: "ht-neon", sans-serif;
+	font-size:14pt;
+}
+
+.D{
+	display:grid;
+	grid-column: span 2;
+	color: wheat;
+	background-color: #1D3557;
+}
+
+#mheader{
+	display:grid;
+
+	margin-bottom:10px;
+
+	background:#1D3557;
+
+}
+
+#mheader img{
+	justify-self: center;
+	
+	width:50%;
+
+}
+
+.menu{
+	display:grid;
+	padding-right:5px;
+	
+	grid-row: span 2;
+	grid-template-columns: 60% 40%;
+	grid-gap: 10px;
+	grid-template-rows: 40% 60%;
+}
+
+.menu img{
+	object-fit: cover;
+	height: 100%;
+    width: 100%;
+}
+
+.item1, .item2, .item3, .item4{
+	display:grid;
+}
+
+.menu p{
+	color:wheat;
+	
+	position: absolute;
+    	align-self: center;
+    	justify-self: center;
+	text-align: center;
+    	font-size: 35pt;
+	z-index:1;
+
+}
+
+.item1, .item2, .item3, .item4{
+	pointer-events:none;
+}
+
+.item1, .item2, .item3, .item4 >img{
+	pointer-events:auto;
+}
+
+/*Previous sibling selector workaround from medium.com*/
+
+.item1:not(:hover) > #tx1{
+	opacity:0;
+}
+
+.item2:not(:hover) > #tx2{
+	opacity:0;
+}
+
+.item3:not(:hover) > #tx3{
+	opacity:0;
+}
+
+.item4:not(:hover) > #tx4{
+	opacity:0;
+}
+
+@keyframes txtin{
+	from {
+        opacity:0;
+		
+    }
+	
+	to {
+		opacity:1;
+		
+    }
+}
+
+@keyframes imgout{
+	from {
+        filter:blur(0px);
+		filter:brightness(100%);
+    }
+	
+	to {
+		
+		filter:blur(4px);
+		filter:brightness(75%);
+    }
+}
+
+.item1:hover > #tx1{
+	
+	animation-name:txtin;
+	animation-duration:.7s;
+}
+
+.item1:hover > img{
+	
+	animation-name:imgout;
+	animation-duration:.7s;
+	animation-fill-mode:forwards;
+}
+
+.item2:hover > #tx2{
+	
+	animation-name:txtin;
+	animation-duration:.7s;
+}
+
+.item2:hover > img{
+	
+	animation-name:imgout;
+	animation-duration:.7s;
+	animation-fill-mode:forwards;
+}
+
+.item3:hover > #tx3{
+	
+	animation-name:txtin;
+	animation-duration:.7s;
+}
+
+.item3:hover > img{
+	
+	animation-name:imgout;
+	animation-duration:.7s;
+	animation-fill-mode:forwards;
+}
+
+.item4:hover > #tx4{
+	
+	animation-name:txtin;
+	animation-duration:.7s;
+}
+
+.item4:hover > img{
+	
+	animation-name:imgout;
+	animation-duration:.7s;
+	animation-fill-mode:forwards;
+}
+
+#soon{
+	font-size:80pt;
+	color:#E23C4A;
+{
