@@ -23,7 +23,7 @@ h1{
 
 p,a{
 	margin:0px;
-	font-size: 25px;
+	font-size: 32px;
 	font-family: "dapifer-stencil", sans-serif;
 	font-weight: 500;
 	font-style: oblique;
@@ -54,6 +54,7 @@ img#lgo {
 	margin-bottom: 10px;
 	background-color: #1D3557;
 	align-items:center;
+	justify-items: center;
 }
 
 .wrapper{
@@ -213,9 +214,9 @@ img#lgo {
 
 .revs{
 	display:grid;
-	grid-template-columns:49% 49%;
+	grid-template-columns: 50% 48%;
 	grid-column-gap: 10px;
-	grid-template-rows: 15% 85%;
+	grid-template-rows: 20% 77%;
 }
 
 #revtop{
@@ -230,17 +231,18 @@ img#lgo {
 .revtxt, .name{
 	text-align:center;
 	font-size: 15pt;
+	grid-area: 2/2/2/7;
 }
 
 #r1,#r2{
 	padding:10px;
-
-	font-family:"dapifer-stencil", sans-serif;
-
-	align-items:center;
-	justify-items: center;
-
+	/* font-family:"dapifer-stencil", sans-serif; */
+	/* align-items:center; */
+	/* justify-items: center; */
 	color: wheat;
+	display: grid;
+	grid-template-columns: repeat(7, 14.28%);
+	grid-template-rows: repeat(5, 20%);
 }
 #r1{
 	border:#e52c3a solid 10px;
@@ -262,16 +264,16 @@ img#lgo {
 .qmrk{
 	font-family: "pinot-grigio-modern";
 	font-style: normal;
-	/* font-family: cursive; */
-	font-size:30pt;
+	font-size: 40pt;
+	grid-area: 1/1;
 }
 
 p.qmrk {
-    margin-bottom: -10px;
+    /* margin-bottom: -10px; */
 }
 
-p#\32 nd {
-    float: right;
+#second {
+    grid-area: 5/7;
 }
 
 2nd.qmrk{
@@ -280,7 +282,9 @@ p#\32 nd {
 
 .name{
 	font-family: "ht-neon", sans-serif;
-	font-size:14pt;
+	font-size: 16pt;
+	grid-area: 5/2/4/7;
+	padding-top: 15px;
 }
 
 .D{
