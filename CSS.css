@@ -86,7 +86,8 @@ img#lgo {
 	z-index:1;
 	width: 45%;
 	align-self: center;
-	translate: 320px -75px;
+	justify-self: center;
+	translate: 0px 70px;
 }
 
 
@@ -96,9 +97,9 @@ img#lgo {
 
 #bgi{
 	width:102%;
-	translate: -17px -80px;
-
+	translate: -17px 65px;
 	filter: blur(2px);
+	align-self: center;
 }
 
 @keyframes blurout {
@@ -107,7 +108,7 @@ img#lgo {
     }
 }
 
-#bgi:hover{
+#bgi:hover, #lgo2:hover + #bgi{
 	animation-name: blurout;
     animation-duration: 1s;
 	animation-fill-mode:forwards;
