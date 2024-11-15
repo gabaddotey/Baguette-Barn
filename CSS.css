@@ -13,6 +13,8 @@ a {
 	color: wheat;
 }
 
+a:hover{font-size: 250%;transition: all .3s cubic-bezier(0, 0.96, 0.3, 0.98);=:allow-discrete;}
+
 h1{
 	font-size:55px;
 	font-family: "mudstone-sans", sans-serif;
@@ -22,7 +24,7 @@ h1{
 }
 
 p,a{
-	margin:0px;
+	margin: 5px;
 	font-size: 32px;
 	font-family: "dapifer-stencil", sans-serif;
 	font-weight: 500;
@@ -100,18 +102,16 @@ img#lgo {
 	translate: -17px 65px;
 	filter: blur(2px);
 	align-self: center;
+	transition: all .7s cubic-bezier(0.41, 0.48, 0.3, 0.98);
 }
 
-@keyframes blurout {
-	to {
-        filter: blur(0px);
-    }
-}
 
 #bgi:hover, #lgo2:hover + #bgi{
 	animation-name: blurout;
     animation-duration: 1s;
 	animation-fill-mode:forwards;
+
+	filter: blur(0px);
 }
 
 .B{
@@ -275,6 +275,7 @@ p.qmrk {
 
 #second {
     grid-area: 5/7;
+    align-self: center;
 }
 
 2nd.qmrk{
